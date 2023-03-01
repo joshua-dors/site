@@ -1,0 +1,158 @@
+* {
+  --text: #393838;
+  --background: #fff;
+  --link: #0891b2;
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    --text: #f5f5f5;
+    --background: #18181b;
+  }
+}
+
+body {
+  color: var(--text);
+  background: var(--background);
+  font-family: system-ui;
+  max-width: 632px;
+  margin: 1.2em auto 0.3em auto;
+  line-height: 1.6;
+  padding: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+footer {
+  margin-top: 2em;
+  text-align: center;
+  font-size: 80%;
+  padding: 0.5rem;
+}
+
+/*Links{{{*/
+a:link,
+a:visited {
+  color: var(--text2);
+}
+
+a:hover {
+  color: var(--link);
+}
+
+header a:hover {
+  color: var(--link);
+}
+
+header a.ghost:link,
+a.ghost:visited,
+a.ghost:hover {
+  text-decoration: none;
+}
+
+nav a {
+  padding-right: 0.6em;
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+}
+
+/* Lists{{{ */
+li {
+  padding: 0.1em;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+/* }}} */
+
+.gallerymasonry {
+  column-count: 1;
+  column-gap: 0.2rem;
+}
+
+section.gallerymasonry h2 {
+  margin-bottom: 0.1em;
+}
+
+.galleryitem {
+  /* display: inline-block; */
+  position: relative;
+  /* width: 90%; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  text-align: center;
+  overflow: hidden;
+}
+
+.galleryitem img {
+  /* width: 90%; */
+}
+
+section.activity {
+  box-shadow: 1px 1px 20px 1px #bbbbbb;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+div.activityMap {
+  margin-bottom: 1em;
+  height: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+div.activityInfo {
+  text-align: left;
+  font-size: 90%;
+  /* width: 90%; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+
+.activityInfoTag {
+  display: inline-block;
+  width: 14ch;
+  font-style: italic;
+}
+
+.date {
+  padding: 0em 0.5em;
+  width: 100%;
+}
+
+figcaption {
+  margin-bottom: 2em;
+}
+
+video {
+  width: 100%;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 90%;
+  border-left: 3px solid;
+  padding-left: 1em;
+}
+
+@media screen and (min-width: 900px) {
+  .maingallerymasonry {
+    column-count: 2;
+  }
+
+  .maingalleryitem {
+    max-height: 190px;
+  }
+}
