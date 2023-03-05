@@ -4,7 +4,7 @@
   "description": "Extremely minimal Eleventy starter to kickstart a simple multi-page site / a nearly opinionless foundation to continue building on",
   "main": "index.html",
   "scripts": {
-    "start": "eleventy --serve",
+    "start": "eleventy --serve & tailwindcss -i ./src/css/tailwind.css -o ./public/css/style.css --watch",
     "build": "eleventy"
   },
   "repository": {
@@ -25,6 +25,10 @@
     "url": "https://github.com/5t3ph/smol-11ty-starter/issues"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.11.1",
+    "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
   }
 }
