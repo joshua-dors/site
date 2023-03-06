@@ -5,15 +5,3 @@
 body {
     font-family: 'Inter', sans-serif;
 }
-
-a {
-    @apply underline;
-    @apply font-semibold;
-    @apply inline-block;
-}
-
-h2 {
-    @apply text-2xl;
-    @apply font-medium;
-    @apply mb-4;
-}
